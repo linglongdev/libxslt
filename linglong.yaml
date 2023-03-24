@@ -1,0 +1,25 @@
+package:
+  id: libxslt
+  name: libxslt
+  version: 1.1.32.3
+  kind: lib
+  description: |
+    libxslt.
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/libxslt.git
+  version: eagle/1.1.32.1
+  commit: 8af535d61ef46ac29f8cb600b41b84338323ae95
+  patch:
+  - 0001-fix-autoconf-automake.patch
+  - 0002-Make-generate-id-deterministic.patch
+  - 0003-remove-plugin-in-xslt-config.patch
+  - 0004-do-not-clean-manpage.patch
+  - 0005-Drop-libdir-and-static-linking-information-from-xslt.patch
+build:
+  kind: autotools

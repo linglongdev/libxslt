@@ -1,0 +1,5 @@
+0001-fix-autoconf-automake.patch
+0002-Make-generate-id-deterministic.patch
+0003-remove-plugin-in-xslt-config.patch
+0004-do-not-clean-manpage.patch
+0005-Drop-libdir-and-static-linking-information-from-xslt.patch
